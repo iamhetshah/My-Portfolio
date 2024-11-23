@@ -1,0 +1,41 @@
+<nav class="sticky select-none top-0 left-0 bg-white shadow p-6 md:p-0">
+    <div class="flex justify-end">
+        <button type="button" class="md:hidden" (click)="toggleNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+    <ul class="flex gap-2 *:p-6 justify-center items-center md:flex-row flex-col"
+        [ngClass]="{'hidden': hide, 'flex': !hide, 'md:flex': true}">
+        <li>
+            <a (click)="this.navigateTo('about')">
+                About
+                <div></div>
+            </a>
+        </li>
+        <li>
+            <a href="#experience">
+                Experience
+                <div></div>
+            </a>
+        </li>
+        <li>
+            <a href="#projects">
+                Projects
+                <div></div>
+            </a>
+        </li>
+        <li>
+            <a href="#milestones">
+                Milestones
+                <div></div>
+            </a>
+        </li>
+        <li>
+            <a href="#contact">
+                Contact
+                <div></div>
+            </a>
+        </li>
+    </ul>
+
+</nav>

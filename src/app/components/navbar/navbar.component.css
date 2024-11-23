@@ -1,0 +1,13 @@
+a:hover>div {
+    height: 1px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+li div {
+    transition: all 0.3s ease-in-out;
+    height: 1px;
+    width: 0;
+    background-color: black;
+    justify-self: center;
+}
