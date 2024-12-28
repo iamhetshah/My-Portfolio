@@ -1,10 +1,11 @@
 import { Component, computed, signal } from '@angular/core';
 import CertificateModel from '../../models/certificate.model';
 import { CertificateCardComponent } from '../certificate-card/certificate-card.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-certificates',
-  imports: [CertificateCardComponent],
+  imports: [CertificateCardComponent, CommonModule],
   templateUrl: './certificates.component.html',
   styleUrl: './certificates.component.css',
 })

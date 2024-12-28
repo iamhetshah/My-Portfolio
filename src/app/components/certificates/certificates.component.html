@@ -7,7 +7,7 @@
 
     <div class="grid gap-3">
         <div class="grid grid-flow-col grid-cols-12 gap-3">
-            <button type="button" class="text-3xl col-span-1" (click)="this.updateOffset(false)">
+            <button type="button" class="text-xl col-span-1" (click)="this.updateOffset(false)">
                 <i class="fas fa-angle-left"></i>
             </button>
             <div class=" col-span-10">
@@ -15,11 +15,18 @@
                 <app-certificate-card [certificate]="certi" />
                 }
             </div>
-            <button type="button" class="text-3xl col-span-1" (click)="this.updateOffset(true)">
+            <button type="button" class="text-xl col-span-1" (click)="this.updateOffset(true)">
                 <i class="fas fa-angle-right"></i>
             </button>
         </div>
         <p class="text-center">{{this.offset() + 1}}/{{this.certificates.length}}</p>
+        <!-- <div class="flex gap-3 justify-center items-center">
+            @for (i of this.certificates; track $index) {
+            <div (click)="this.offset.set($index)"
+                class="w-3 cursor-pointer aspect-square bg-zinc-300 rounded-full duration-100"
+                [ngClass]="{'w-5': this.offset() === $index}"></div>
+            }
+        </div> -->
     </div>
 </section>
 <div class="p-10"></div>
