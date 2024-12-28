@@ -5,10 +5,21 @@
         <i class="fa-solid fa-diamond"></i>
     </div>
 
-    <div class="flex flex-col gap-10">
-        @for (certi of this.certificates; track $index) {
-        <app-certificate-card [certificate]="certi" />
-        }
+    <div class="grid gap-3">
+        <div class="grid grid-flow-col grid-cols-12 gap-3">
+            <button type="button" class="text-3xl col-span-1" (click)="this.updateOffset(false)">
+                <i class="fas fa-angle-left"></i>
+            </button>
+            <div class=" col-span-10">
+                @for (certi of this.offset_certificates(); track $index) {
+                <app-certificate-card [certificate]="certi" />
+                }
+            </div>
+            <button type="button" class="text-3xl col-span-1" (click)="this.updateOffset(true)">
+                <i class="fas fa-angle-right"></i>
+            </button>
+        </div>
+        <p class="text-center">{{this.offset() + 1}}/{{this.certificates.length}}</p>
     </div>
 </section>
 <div class="p-10"></div>
