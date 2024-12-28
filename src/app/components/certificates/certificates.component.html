@@ -1,0 +1,14 @@
+<section class="p-4">
+    <div class="flex justify-center gap-10 items-center">
+        <i class="fa-solid fa-diamond"></i>
+        <h1 class="text-6xl text-center py-20">Certificates</h1>
+        <i class="fa-solid fa-diamond"></i>
+    </div>
+
+    <div class="flex flex-col gap-10">
+        @for (certi of this.certificates; track $index) {
+        <app-certificate-card [certificate]="certi" />
+        }
+    </div>
+</section>
+<div class="p-10"></div>

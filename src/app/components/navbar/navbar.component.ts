@@ -14,9 +14,13 @@ export class NavbarComponent {
   constructor(private router: Router) {}
 
   navigateTo(fragment: string) {
-    this.router.navigate([''], {
-      fragment,
-    });
+    this.router
+      .navigate([''], {
+        fragment,
+      })
+      .finally(() => {
+        this.toggleNavbar();
+      });
   }
 
   toggleNavbar() {

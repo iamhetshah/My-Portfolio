@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
-import { SocialMediaLinksService } from '../../services/social-media-links.service';
+import AppConstants from '../../app.constants';
 
 @Component({
   selector: 'app-social',
   imports: [],
-  providers: [SocialMediaLinksService],
+  providers: [],
   templateUrl: './social.component.html',
   styleUrl: './social.component.css',
 })
 export class SocialComponent {
-  constructor(protected social: SocialMediaLinksService) {}
+  protected social = AppConstants.social;
+  constructor() {}
 }

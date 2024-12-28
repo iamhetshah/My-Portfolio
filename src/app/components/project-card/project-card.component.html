@@ -1,0 +1,47 @@
+<div class="border rounded-lg grid grid-flow-row gap-6 p-6 text-lg bg-white">
+    <!-- Header Section -->
+    <div class="flex flex-col">
+        <div class="flex items-center justify-between">
+            <h1 class="text-4xl font-bold text-gray-800">{{ this.project().name }}</h1>
+        </div>
+        <p class="text-gray-500 mt-1">
+            {{ this.project().start_date | date: 'MMMM YYYY' }} -
+            {{ this.project().end_date | date: 'MMMM YYYY' }}
+        </p>
+    </div>
+
+    <!-- Description Section -->
+    <p class="text-gray-700 leading-relaxed">
+        {{ this.project().description }}
+    </p>
+
+    <!-- Skills Section -->
+    <div>
+        <h2 class="text-xl font-semibold text-gray-800 mb-2">Skills</h2>
+        <div class="flex flex-wrap gap-2">
+            @for (skill of this.project().skills; track $index) {
+            <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
+                {{ skill }}
+            </span>
+            }
+        </div>
+    </div>
+
+    <!-- GitHub Section -->
+    <div class="grid">
+        <span class="text-xl font-semibold text-gray-800">GitHub</span>
+        <a href="{{ this.project().github_link }}" target="_blank" class="break-words text-blue-600 hover:underline">
+            {{ this.project().github_link.split('github.com/')[1] }}
+            <i class="fa-solid fa-arrow-up-right-from-square ml-2"></i>
+        </a>
+    </div>
+    <div class="flex gap-6 flex-col">
+        @if (this.project().motivation) {
+        <app-expandable-text [text]="this.project().motivation!" heading="Motivation"></app-expandable-text>
+        }
+        @if (this.project().solves) {
+        <app-expandable-text [text]="this.project().motivation!" heading="Problem Solved"></app-expandable-text>
+        }
+    </div>
+    <div></div>
+</div>
