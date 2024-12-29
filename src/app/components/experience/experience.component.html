@@ -1,0 +1,12 @@
+<section class="p-4">
+    <app-section-header>
+        Experience
+    </app-section-header>
+
+    <div class="grid divide-y-2 gap-10">
+        @for (exp of this.experiences; track $index) {
+        <app-experience-card [experience]="exp"></app-experience-card>
+        }
+    </div>
+</section>
+<div class="p-10"></div>

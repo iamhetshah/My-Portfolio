@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import AppConstants from '../../app.constants';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import ProjectModel from '../../models/project.model';
+import { SectionHeaderComponent } from '../section-header/section-header.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [ProjectCardComponent],
+  imports: [ProjectCardComponent, SectionHeaderComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })

@@ -1,13 +1,7 @@
-<app-basic-details></app-basic-details>
-<hr>
-<div class="max-w-screen-2xl mx-auto px-4">
-    <app-about id="about"></app-about>
-</div>
-<hr>
-<div class="max-w-screen-2xl mx-auto px-4">
-    <app-projects id="projects"></app-projects>
-</div>
-<hr>
-<div class="max-w-screen-2xl mx-auto">
-    <app-certificates id="certificates"></app-certificates>
-</div>
+@if(this.windowScrolled) {
+<button type="button" class="fixed bottom-5 right-5 p-3 w-12 bg-gray-200 shadow aspect-square rounded-full"
+    (click)="scrollTop()">
+    <i class="fas fa-arrow-up"></i>
+</button>
+}
+<app-layout></app-layout>

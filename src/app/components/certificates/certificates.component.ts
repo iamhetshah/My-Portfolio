@@ -2,10 +2,11 @@ import { Component, computed, signal } from '@angular/core';
 import CertificateModel from '../../models/certificate.model';
 import { CertificateCardComponent } from '../certificate-card/certificate-card.component';
 import { CommonModule } from '@angular/common';
+import { SectionHeaderComponent } from '../section-header/section-header.component';
 
 @Component({
   selector: 'app-certificates',
-  imports: [CertificateCardComponent, CommonModule],
+  imports: [CertificateCardComponent, CommonModule, SectionHeaderComponent],
   templateUrl: './certificates.component.html',
   styleUrl: './certificates.component.css',
 })

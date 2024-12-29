@@ -4,11 +4,17 @@
             <i class="fa-solid fa-bars"></i>
         </button>
     </div>
-    <ul class="flex gap-2 *:p-6 justify-center items-center md:flex-row flex-col"
+    <ul class="flex gap-2 *:p-6 *:cursor-pointer justify-center items-center md:flex-row flex-col"
         [ngClass]="{'hidden': hide, 'flex': !hide, 'md:flex': true}">
         <li>
             <a (click)="this.navigateTo('about')">
                 About
+                <div></div>
+            </a>
+        </li>
+        <li>
+            <a (click)="this.navigateTo('experience')">
+                Experience
                 <div></div>
             </a>
         </li>
