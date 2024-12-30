@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactComponent } from './contact.component';
+import { HyperLinkComponent } from './hyper-link.component';
 
-describe('ContactComponent', () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe('HyperLinkComponent', () => {
+  let component: HyperLinkComponent;
+  let fixture: ComponentFixture<HyperLinkComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactComponent]
+      imports: [HyperLinkComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(HyperLinkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

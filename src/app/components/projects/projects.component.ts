@@ -3,10 +3,11 @@ import AppConstants from '../../app.constants';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import ProjectModel from '../../models/project.model';
 import { SectionHeaderComponent } from '../section-header/section-header.component';
+import { SectionComponent } from '../section/section.component';
 
 @Component({
   selector: 'app-projects',
-  imports: [ProjectCardComponent, SectionHeaderComponent],
+  imports: [ProjectCardComponent, SectionHeaderComponent, SectionComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })

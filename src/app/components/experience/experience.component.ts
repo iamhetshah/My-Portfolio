@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import ExperienceModel from '../../models/experience.model';
 import { ExperienceCardComponent } from '../experience-card/experience-card.component';
 import { SectionHeaderComponent } from '../section-header/section-header.component';
+import { SectionComponent } from '../section/section.component';
 
 @Component({
   selector: 'app-experience',
-  imports: [ExperienceCardComponent, SectionHeaderComponent],
+  imports: [ExperienceCardComponent, SectionHeaderComponent, SectionComponent],
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css',
 })

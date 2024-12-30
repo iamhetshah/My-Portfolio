@@ -1,17 +1,26 @@
-<div class="grid py-3 gap-2 text-lg *:rounded-md grid-flow-col">
-    <a [href]="this.social.github" type="button" target="_blank"
-        class="bg-zinc-100 p-2 flex justify-center items-center gap-2">
-        <i class="fab fa-github"></i>
-        Github
-    </a>
-    <a [href]="this.social.linkedin" type="button" target="_blank"
-        class="bg-zinc-100 p-2 flex justify-center items-center gap-2">
-        <i class="fab fa-linkedin"></i>
-        Linkedin
-    </a>
-    <a [href]="this.social.instagram" type="button" target="_blank"
-        class="bg-zinc-100 p-2 flex justify-center items-center gap-2">
-        <i class="fab fa-instagram"></i>
-        Instagram
-    </a>
+<div class="text-3xl text-zinc-600 grid mt-20 place-items-center gap-6 mb-20">
+    <!-- Email Button -->
+    <div>
+        <a href="mailto:shahhet2580@gmail.com" target="_blank"
+            class="rounded-full bg-zinc-100 p-5 hover:text-zinc-700 flex items-center gap-4">
+            <i class="fas fa-envelope"></i>
+            <span class="text-lg font-medium">{{'shahhet2580@gmail.com'}}</span>
+        </a>
+    </div>
+
+    <!-- Social Links -->
+    <div class="flex gap-6">
+        <a [href]="this.social.github" target="_blank"
+            class="bg-zinc-100 p-4 rounded-full w-16 hover:text-zinc-700 aspect-square flex justify-center items-center">
+            <i class="fab fa-github"></i>
+        </a>
+        <a [href]="this.social.linkedin" target="_blank"
+            class="bg-zinc-100 p-4 rounded-full w-16 hover:text-zinc-700 aspect-square flex justify-center items-center">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a [href]="this.social.instagram" target="_blank"
+            class="bg-zinc-100 p-4 rounded-full w-16 hover:text-zinc-700 aspect-square flex justify-center items-center">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
 </div>

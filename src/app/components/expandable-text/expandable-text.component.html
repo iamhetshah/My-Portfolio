@@ -1,5 +1,5 @@
 <div class="border-b">
-    <div class="flex justify-between items-center cursor-pointer pb-2 rounded-md transition-all duration-200 ease-in-out"
+    <div class="flex justify-between items-center select-none cursor-pointer pb-2 rounded-md transition-all duration-200 ease-in-out"
         (click)="this.expanded.set(!this.expanded())">
         <h1 class="text-lg font-semibold text-gray-800">{{this.heading()}}</h1>
         <button [ngClass]="{'rotate-180': this.expanded()}" class="text-gray-600 transition-transform duration-300">

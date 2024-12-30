@@ -4,7 +4,7 @@ import { BasicDetailsComponent } from '../basic-details/basic-details.component'
 import { CertificatesComponent } from '../certificates/certificates.component';
 import { ExperienceComponent } from '../experience/experience.component';
 import { ProjectsComponent } from '../projects/projects.component';
-import { ContactComponent } from '../contact/contact.component';
+import { SocialComponent } from '../social/social.component';
 
 @Component({
   selector: 'app-layout',
@@ -14,7 +14,7 @@ import { ContactComponent } from '../contact/contact.component';
     ProjectsComponent,
     CertificatesComponent,
     ExperienceComponent,
-    ContactComponent,
+    SocialComponent,
   ],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.css',

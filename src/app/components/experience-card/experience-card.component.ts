@@ -1,10 +1,12 @@
 import { Component, input } from '@angular/core';
 import ExperienceModel from '../../models/experience.model';
 import { DatePipe } from '@angular/common';
+import { SkillPillComponent } from '../skill-pill/skill-pill.component';
+import { BaseCardComponent } from '../base-card/base-card.component';
 
 @Component({
   selector: 'app-experience-card',
-  imports: [DatePipe],
+  imports: [DatePipe, SkillPillComponent, BaseCardComponent],
   templateUrl: './experience-card.component.html',
   styleUrl: './experience-card.component.css',
 })
