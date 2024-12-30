@@ -1,15 +1,15 @@
-<div class="p-6 border rounded text-lg bg-white grid gap-3 grid-flow-col">
+<div class="p-6 border rounded md:grid-flow-col bg-white grid gap-3 grid-flow-row">
     <div>
         <a [href]="this.experience().company_website" target="_blank">
-            <img class="w-16 rounded mt-2 aspect-square" [src]="'/company_logo/' + this.experience().company_logo"
-                [alt]="this.experience().company_logo">
+            <img class="min-w-16 max-w-16 rounded mt-2 aspect-square"
+                [src]="'/company_logo/' + this.experience().company_logo" [alt]="this.experience().company_logo">
         </a>
     </div>
     <div class="grid grid-flow-row gap-6">
         <!-- Header Section -->
         <div class="flex flex-col">
             <div class="flex items-center justify-between">
-                <h1 class="text-4xl font-bold text-gray-800">{{ this.experience().designation }}</h1>
+                <h1 class="text-2xl font-bold text-gray-800">{{ this.experience().designation }}</h1>
             </div>
             <div class="text-gray-500 items-center mt-1 flex gap-3 capitalize">
                 <span>
@@ -20,7 +20,7 @@
                     {{this.experience().type}}
                 </span>
             </div>
-            <div class="text-gray-500 items-center flex gap-3 capitalize">
+            <div class="text-gray-500 items-center flex-wrap flex gap-3 capitalize">
                 <span class="text-gray-500 mt-1">
                     {{ this.experience().start_date | date: 'MMMM YYYY' }} -
                     @if(this.experience().end_date) {
@@ -48,7 +48,7 @@
 
         <!-- Skills Section -->
         <div>
-            <h2 class="text-xl font-semibold text-gray-800 mb-2">Skills</h2>
+            <h2 class="text-lg font-semibold text-gray-800 mb-2">Skills</h2>
             <div class="flex flex-wrap gap-2">
                 @for (skill of this.experience().skills; track $index) {
                 <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="grid">
-            <span class="text-xl font-semibold text-gray-800">Company Website</span>
+            <span class="text-lg font-semibold text-gray-800">Company Website</span>
             <a href="{{ this.experience().company_website }}" target="_blank"
                 class="break-words text-blue-600 hover:underline">
                 {{ this.experience().company_website }}

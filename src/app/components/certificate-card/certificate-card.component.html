@@ -1,7 +1,7 @@
 <div class="border rounded-lg flex flex-col h-full gap-6 p-6 text-lg bg-white">
     <div>
-        <h1 class="text-4xl font-bold text-wrap text-gray-800">{{ this.certificate().name }}</h1>
-        <span class="text-gray-500 text-xl">{{ this.certificate().issuer }}
+        <h1 class="text-2xl font-bold text-wrap text-gray-800">{{ this.certificate().name }}</h1>
+        <span class="text-gray-500 text-lg">{{ this.certificate().issuer }}
         </span>
     </div>
     <div class="grid">
@@ -11,7 +11,7 @@
         </span>
     </div>
     <div>
-        <h2 class="text-xl font-semibold text-gray-800 mb-2">Skills</h2>
+        <h2 class="text-lg font-semibold text-gray-800 mb-2">Skills</h2>
         <div class="flex flex-wrap gap-2">
             @for (skill of this.certificate().skills; track $index) {
             <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-medium">
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="flex flex-col">
-        <span class="text-xl font-semibold text-gray-800">Credential Link</span>
+        <span class="text-lg font-semibold text-gray-800">Credential Link</span>
         <a href="{{ this.certificate().credential_url }}" target="_blank"
             class="break-words text-blue-600 hover:underline">
             {{ this.certificate().credential_url }}

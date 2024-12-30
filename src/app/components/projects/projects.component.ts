@@ -21,6 +21,10 @@ export class ProjectsComponent {
       end_date: new Date(new Date().setFullYear(2023, 9, 30)),
       github_link: 'https://github.com/iamhetshah/Database-Importer',
       skills: ['Java', 'Multithreading', 'JDBC'],
+      motivation:
+        'CSV files are comma-separated values and are easy to read and write. I wanted to find a way to populate a database from CSV files without manual entry, and the process had to be quick and efficient. This project was also my college 2nd-semester submission, and while most of my peers were creating traditional legacy management systems, I wanted to do something unique. This motivated me to build a tool that could automate and streamline the process of migrating large datasets into a database.',
+      solves:
+        'The tool solves the problem of manual and slow CSV-to-database migration by automating the process and enabling parallel processing for faster handling of large files. It’s a valuable utility for data migration tasks.',
     },
     {
       name: 'Image Compression and Edge Detection using QuadTree',
@@ -32,6 +36,10 @@ export class ProjectsComponent {
         'https://github.com/iamhetshah/Image-Compression-With-Quadtree',
       hosted_link: undefined,
       skills: ['Java', 'Data Structures', 'Image Processing'],
+      motivation:
+        "I was learning how JPEG works and had to build a project for my college's 1st-year Data Structures and Algorithms (DSA) course. While most of my peers were implementing basic algorithms, I wanted to do something unique that applied DSA concepts creatively. After researching online, I discovered that I could use Quadtree data structures for image compression. With no similar projects available as a reference, I decided to build one entirely from scratch, making it a challenging yet rewarding experience.",
+      solves:
+        'This program addresses the need for efficient image compression, especially for images with large areas of uniform color. By balancing file size and image quality, it offers a practical solution for reducing storage requirements.',
     },
     {
       name: 'Chat App using Firebase',
@@ -41,6 +49,10 @@ export class ProjectsComponent {
       end_date: new Date('2023-11-30'),
       github_link: 'https://github.com/iamhetshah/Chat-App-using-firebase',
       hosted_link: undefined,
+      motivation:
+        'During the COVID-19 pandemic, I was isolated in a room at another house and only had my Android device with Sololearn installed. Feeling bored, I stumbled upon Firebase while browsing YouTube and found it intriguing. Using my Android device and Sololearn, I built a real-time chat application to pass the time and learn something new.',
+      solves:
+        'The chat app provides an easy way to connect with others in real time, offering features like public chat and secure private rooms. It’s a lightweight solution for staying connected, especially during isolation.',
       skills: ['Firebase', 'Bootstrap', 'JavaScript'],
     },
     {
@@ -51,6 +63,10 @@ export class ProjectsComponent {
       end_date: new Date(new Date().setFullYear(2023, 10, 30)),
       github_link: 'https://github.com/iamhetshah/Bill-Splitter',
       skills: ['Angular', 'TypeScript', 'Graphs'],
+      solves:
+        'The app simplifies the process of splitting group expenses, eliminating the confusion and hassle of tracking who owes what. By minimizing the number of transactions, it makes settling debts quick and stress-free.',
+      motivation:
+        'During an outing with three friends, we faced a confusing scenario where some paid for others, and settling the final amounts became complicated with multiple transactions. This situation gave me the idea to build an app where users could form groups, add people and their transactions, and get a clear, minimized set of transactions to settle all debts effortlessly.',
     },
     {
       name: 'Chess Engine Using Neural Network',
@@ -60,8 +76,10 @@ export class ProjectsComponent {
       end_date: new Date(new Date().setFullYear(2024, 7, 30)),
       github_link: 'https://github.com/iamhetshah/Chess-Engine-using-CNN',
       skills: ['Python', 'CNN', 'ML', 'Algorithms'],
-      motivation: 'The motivation was to learn new things.',
-      solves: 'This does not solve anythin.',
+      motivation:
+        'While playing chess against a computer bot, I lost badly, which made me curious about how these bots play so strategically. This curiosity ignited a journey into understanding the mechanics behind chess engines. To dig deeper, I read "Neural Networks for Chess: The Magic of Deep and Reinforcement Learning Revealed," which explained how other chess engines are built and inspired me to create one of my own.',
+      solves:
+        'This project addresses the challenge of building an intelligent system capable of analyzing chess positions and making optimal moves, just like professional players. It demonstrates how artificial intelligence can mimic human expertise in strategic games.',
     },
     {
       name: 'Music WebApp',
@@ -71,6 +89,10 @@ export class ProjectsComponent {
       end_date: new Date(new Date().setFullYear(2024, 3, 30)),
       github_link: 'https://github.com/iamhetshah/Music-WebApp',
       skills: ['Angular', 'Django'],
+      motivation:
+        'While scrolling through Instagram, I stumbled upon a library that could download videos from YouTube. Around the same time, I was frustrated with Spotify—its frequent ads and the absence of many songs that were available on YouTube. This gave me the idea to create a web app that provides ad-free access to YouTube’s vast music library, supports background playback, and offers a smooth, uninterrupted listening experience.',
+      solves:
+        'The app solves the problem of finding a cost-effective music solution that combines YouTube’s extensive music collection with features like background play and no advertisements. It’s a convenient way to enjoy music without interruptions.',
     },
     {
       name: 'E commerce website',
@@ -80,6 +102,10 @@ export class ProjectsComponent {
       end_date: new Date(new Date().setFullYear(2021, 6, 30)),
       github_link: 'https://github.com/iamhetshah/eCommerce',
       skills: ['Django', 'JavaScript', 'Python'],
+      motivation:
+        'This project came to life while I was learning Django. As I explored its features, I decided to build an e-commerce application to put my learning into practice. It became an opportunity to understand the backend and frontend dynamics of web applications.',
+      solves:
+        'The website provides a platform for users to browse, manage shopping carts, and handle their purchases seamlessly. It’s a straightforward solution for managing an online store with essential features.',
     },
   ];
 
